@@ -5,7 +5,7 @@ steps:
 logsBucket: 'gs://mylogsbucket'
 options:
   logging: GCS_ONLY  
-
+  
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image' ]
   id: 'Push Docker Image'
