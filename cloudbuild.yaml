@@ -6,7 +6,6 @@ steps:
       - us-central1-docker.pkg.dev/ace-line-434711-d7/gke-repo/quickstart-image
       - .
     id: Build Docker Image
-    options:
   - name: gcr.io/cloud-builders/docker
     args:
       - push
