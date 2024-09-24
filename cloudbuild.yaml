@@ -6,7 +6,7 @@ steps:
       - us-central1-docker.pkg.dev/ace-line-434711-d7/gke-repo/quickstart-image
       - .
     id: Build Docker Image
-    options: null
+    options:
     logging: CLOUD_LOGGING_ONLY
   - name: gcr.io/cloud-builders/docker
     args:
