@@ -3,8 +3,7 @@ steps:
   args: ['build', '-t', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image', './app1' ]
   id: 'Build Docker Image'
 options:
-  logging: CLOUD_LOGGING_ONLY
-  
+  logging: CLOUD_LOGGING_ONLY  
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image' ]
   id: 'Push Docker Image'
